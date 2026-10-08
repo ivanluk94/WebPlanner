@@ -1,0 +1,249 @@
+**/obj/** 
+**/bin/**
+
+# -----------------------------------------------------------------------------
+# .gitignore for Visual Studio C/C++ projects (console & non-console apps)
+# Комплексний набір шаблонів — ігнорує артефакти збірки, IDE-файли, тимчасові файли тощо
+# -----------------------------------------------------------------------------
+
+# ----- Visual Studio core -----
+## User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+## Visual Studio workspace
+.vs/
+.vscode/            # optional: IDE settings (залежно чи хочеш зберігати)
+*.code-workspace
+
+## Build results
+[Bb]in/
+[Oo]bj/
+out/
+build/
+Build/
+Debug/
+Release/
+x64/
+x86/
+arm/
+arm64/
+
+## Visual C++ intermediate files
+*.obj
+*.o
+*.o.*
+*.lo
+*.lai
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.pch
+*.gch
+
+## Libraries and binaries
+*.lib
+*.a
+*.la
+*.dll
+*.so
+*.dylib
+*.exe
+*.out
+*.app
+
+## Debug / symbol files
+*.pdb
+*.ipdb
+*.iobj
+*.idb
+*.ilk
+
+## Linker maps and logs
+*.map
+*.log
+BuildLog.htm
+*.buildlog
+
+## Generated files from Visual Studio
+*.sdf
+*.opensdf
+*.cachefile
+*.db
+*.opendb
+
+## IntelliSense & browsing databases
+ipch/
+*.VC.db
+*.VC.opendb
+*.browse.*
+*.browse.VC.db
+
+# ----- Visual Studio project files -----
+# Don't ignore .sln, .vcxproj, .vcxproj.filters by default.
+# But ignore per-user and temporary project files:
+*.vcxproj.user
+*.vcxproj.filters.user
+*.vcxproj.*.user
+*.props.user
+*.targets.user
+
+# Temporary project-generated files
+# (for some extensions / add-ins)
+*.vspscc
+*.vssscc
+
+# ----- CMake -----
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+CMakeScripts/
+Testing/
+CTestTestfile.cmake
+Makefile
+cmake-build-*/
+**/build/**
+
+# Keep CMakeLists.txt / *.cmake sources (DO NOT ignore)
+
+# ----- Conan, vcpkg, packages -----
+# Conan
+conanbuildinfo.txt
+conanfile.lock
+
+# vcpkg
+/vcpkg_installed/
+/installed/
+/packages/
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+project.lock.json
+project.fragment.lock.json
+.nuget/
+
+# ----- MSBuild / temporary -----
+*.tmp
+*.temp
+*.cache
+*.manifest
+*.idb
+*.lastcodeanalysissucceeded
+*.log
+
+# msbuild user-specific
+*.userprefs
+
+# ----- Test artifacts -----
+TestResults/
+*.trx
+*.coverage
+coverage/
+coverage.xml
+*.prof
+
+# ----- Code analysis / static analysis -----
+*_AnalysisLog.xml
+*.sarif
+*.sln.binlog
+
+# ----- Generated docs / installers -----
+*.msi
+*.msm
+*.msix
+*.appx
+*.appxbundle
+*.zip
+*.7z
+*.tar
+*.tar.gz
+
+# ----- OS files -----
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+Thumbs.db
+ehthumbs.db
+
+# Windows recycle bin, desktop.ini
+$RECYCLE.BIN/
+desktop.ini
+
+# ----- Editor backup files -----
+*~ 
+*.swp
+*.swo
+*.bak
+*.orig
+*.tmp
+
+# ----- JetBrains (if any) -----
+.idea/
+*.iml
+
+# ----- Qt Creator / Qt MOC / QML -----
+moc_*.cpp
+qrc_*.cpp
+ui_*.h
+Makefile.Debug
+Makefile.Release
+*.qmake.stash
+
+# ----- MinGW / MSYS / WSL -----
+/usr/local/
+/mingw32/
+/mingw-w64/
+*.exe~
+*.exe.stackdump
+
+# ----- Embedded / other toolchain artefacts -----
+*.map
+*.lst
+*.hex
+*.bin
+
+# ----- Packaging / distribution -----
+dist/
+deploy/
+_release/
+_release-*/
+
+# ----- Coverage / profiling -----
+coverage/
+*.gcda
+*.gcno
+*.profdata
+*.profraw
+
+# ----- Documentation sources outputs -----
+/docs/_build/
+/docs/build/
+/doc/build/
+
+# ----- Temporary images / caches -----
+*.log
+*.tmp
+*.cache
+
+# ----- Misc common -----
+*.class
+*.jar
+*.war
+*.ear
+
+# ----- Optional: keep user-chosen files under source control -----
+# Якщо хочеш зберігати налаштування VSCode або специфічні файли — видали відповідні рядки:
+# .vscode/
+# .idea/
+
+# -----------------------------------------------------------------------------
+# End
+# -----------------------------------------------------------------------------

@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendar</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div id="screen-center">
+      <div class="week">
+        <p>Тиждень 1</p>
+        <table class="table">
+          <tr>
+            <td>Monday</td>
+            <td>date</td>
+            <td data-task-id="mon-1" contenteditable="true"></td>
+          </tr>
+          <tr>
+            <td>Tuesday</td>
+            <td>date</td>
+            <td data-task-id="tue-1" contenteditable="true"></td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>date</td>
+            <td data-task-id="wed-1" contenteditable="true"></td>
+          </tr>
+          <tr>
+            <td>Thursday</td>
+            <td>date</td>
+            <td data-task-id="thu-1" contenteditable="true"></td>
+          </tr>
+          <tr>
+            <td>Friday</td>
+            <td>date</td>
+            <td data-task-id="fri-1" contenteditable="true"></td>
+          </tr>
+          <tr>
+            <td>Saturday</td>
+            <td>date</td>
+            <td data-task-id="sat-1" contenteditable="true"></td>
+          </tr>
+          <tr>
+            <td>Sunday</td>
+            <td>date</td>
+            <td data-task-id="sun-1" contenteditable="true"></td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="week">
+        <p>Тиждень 2</p>
+        <table class="table">
+          <tr>
+            <td>Monday</td>
+            <td>date</td>
+            <td data-task-id="mon-2" contenteditable="true"></td>
+          </tr>
+          <tr>
+            <td>Tuesday</td>
+            <td>date</td>
+            <td data-task-id="tue-2" contenteditable="true"></td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>date</td>
+            <td id="wed-2" contenteditable="true"></td>
+          </tr>
+          <tr>
+            <td>Thursday</td>
+            <td>date</td>
+            <td data-task-id="thu-2" contenteditable="true"></td>
+          </tr>
+          <tr>
+            <td>Friday</td>
+            <td>date</td>
+            <td data-task-id="fri-2" contenteditable="true"></td>
+          </tr>
+          <tr>
+            <td>Saturday</td>
+            <td>date</td>
+            <td data-task-id="sat-2" contenteditable="true"></td>
+          </tr>
+          <tr>
+            <td>Sunday</td>
+            <td>date</td>
+            <td data-task-id="sun-2" contenteditable="true"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div id="notes" contenteditable="true"></div>
+  </body>
+</html>
